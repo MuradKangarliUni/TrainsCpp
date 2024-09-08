@@ -9,8 +9,8 @@ Application::Application() {
 void Application::Run() {
 	int choice;
 	do {
-		// smth happes here
 		displayMenu();
+		std::cin >> choice;
 
 		switch (choice) {
 		case 1:
