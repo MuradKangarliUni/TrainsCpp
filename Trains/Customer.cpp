@@ -1,5 +1,11 @@
 #include "Customer.h"
 
+Customer::Customer(intRef id, strRef name, strRef surname)
+    : m_id(id), m_name(name), m_surname(surname)
+{
+
+}
+
 void Customer::setId(intRef id)
 {
     m_id = id;

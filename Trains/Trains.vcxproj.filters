@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RailwayManagementSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Booking.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -30,16 +24,13 @@
     <ClCompile Include="PassengerTrain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HighSpeedTrain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Payment.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Seat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ElectricTrain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,9 +39,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Train.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Booking.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Application.h">
@@ -65,13 +53,10 @@
     <ClInclude Include="PassengerTrain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HighSpeedTrain.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Payment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Seat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ElectricTrain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

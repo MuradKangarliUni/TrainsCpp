@@ -128,23 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
-    <ClCompile Include="Booking.cpp" />
     <ClCompile Include="Customer.cpp" />
-    <ClCompile Include="HighSpeedTrain.cpp" />
+    <ClCompile Include="ElectricTrain.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PassengerTrain.cpp" />
-    <ClCompile Include="Payment.cpp" />
-    <ClCompile Include="RailwayManagementSystem.cpp" />
     <ClCompile Include="Seat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
-    <ClInclude Include="Booking.h" />
     <ClInclude Include="Customer.h" />
+    <ClInclude Include="ElectricTrain.h" />
     <ClInclude Include="Human.h" />
-    <ClInclude Include="HighSpeedTrain.h" />
     <ClInclude Include="PassengerTrain.h" />
-    <ClInclude Include="Payment.h" />
     <ClInclude Include="RailwayManagementSystem.h" />
     <ClInclude Include="Seat.h" />
     <ClInclude Include="Train.h" />
