@@ -11,7 +11,7 @@ typedef const int& defIntRef;
 class RailwayManagementSystem
 {
 private:
-	std::vector<std::unique_ptr<Train>> m_trains;
+	std::vector<Train*> m_trains;
 	std::vector<std::unique_ptr<Customer>> m_customers;
 
 public:
@@ -27,8 +27,7 @@ public:
 		}
 	}
 	void addCustomer(intRef id, strRef name, strRef surname) {
-		Customer* c = new Customer(id, name, surname);
-		m_customers.push_back(std::make_unique<Customer>(c));
+		m_customers.push_back(std::make_unique<Customer>(id, name, surname));
 	}
 
 	void addTrain(strRef model, defIntRef numSeats, defIntRef batCap=0) {
@@ -40,12 +39,12 @@ public:
 		switch (typeOfTrain) {
 		case 1: {
 			ElectricTrain* eT = new ElectricTrain(model, numSeats, batCap);
-			m_trains.push_back(std::make_unique<Train>(eT));
+			m_trains.push_back(eT);
 			break;
 		}
 		case 2: {
 			PassengerTrain* pT = new PassengerTrain(model, numSeats);
-			m_trains.push_back(std::make_unique<Train>(pT));
+			m_trains.push_back(pT);
 			break;
 		}
 		}

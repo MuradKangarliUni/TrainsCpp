@@ -19,6 +19,7 @@ private:
     std::map<Seat, Customer> seats;
     int m_numberOfSeats;
     int Id;
+    int curSeat;
     std::string m_model;
 };
 

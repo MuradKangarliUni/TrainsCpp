@@ -31,6 +31,7 @@ void Application::Run() {
 			std::cout << "\n\nPlease input battery capacity(if electric, else 0): ";
 			std::cin >> batCap;
 			m_rmSystem->addTrain(model, numSeats, batCap);
+			break;
 		case 3:
 			system("cls");
 

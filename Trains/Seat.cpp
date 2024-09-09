@@ -2,11 +2,20 @@
 
 #include "seat.h"
 
-Seat::Seat() : booked(false), customer(nullptr) {}
+Seat::Seat() : seatNumber(0), booked(false), customer(nullptr) {}
 
 Seat::~Seat() {
     delete customer;
 }
+
+void Seat::setSeatNumber(int number) {
+    seatNumber = number;
+}
+
+int Seat::getSeatNumber() const {
+    return seatNumber;
+}
+
 
 bool Seat::isBooked() const {
     return booked;
@@ -28,3 +37,4 @@ void Seat::cancelBooking() {
 Customer* Seat::getCustomer() const {
     return customer;
 }
+

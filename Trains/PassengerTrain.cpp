@@ -3,7 +3,7 @@
 #include <iostream>
 
 PassengerTrain::PassengerTrain(const std::string& model, int numberOfSeats)
-    : m_model(model), m_numberOfSeats(numberOfSeats) {}
+    : m_model(model), m_numberOfSeats(numberOfSeats), curSeat(0) {}
 
 PassengerTrain::~PassengerTrain() = default;
 
@@ -17,6 +17,7 @@ void PassengerTrain::reserveSeat(Customer* c) {
         std::cout << "Warning: all places occupied, exiting..." << std::endl;
     }
     Seat s;
+    s.setSeatNumber(curSeat++);
     s.bookSeat(c);
     seats[s] = *c;
 }

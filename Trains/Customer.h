@@ -4,6 +4,9 @@
 class Customer : public Human
 {
 public:
+	Customer() {
+
+	}
 	Customer(intRef id, strRef name, strRef surname);
 	Customer(Customer&& c) noexcept{
 		m_name = c.m_name;
@@ -16,14 +19,24 @@ public:
 		m_id = c.m_id;
 	}
 	Customer& operator=(const Customer& c) {
+		if (this == &c) {
+			return *this;
+		}
 		m_name = c.m_name;
 		m_surname = c.m_surname;
 		m_id = c.m_id;
+		return *this;
+		
 	}
-	Customer&& operator=(Customer&& c) noexcept {
-		m_name = c.m_name;
-		m_surname = c.m_surname;
-		m_id = c.m_id;
+	Customer& operator=(Customer&& c) noexcept {
+		if (this != &c) {
+			m_name = std::move(c.m_name);
+			m_surname = std::move(c.m_surname);
+			m_id = c.m_id;
+
+			c.m_id = 0;
+		}
+		return *this;
 	}
 
 	void setName(strRef name) override;
